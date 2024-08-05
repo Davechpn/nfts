@@ -39,7 +39,7 @@ const Cart: React.FC<CartProps> = ({ closeModal }) => {
     <div className="fixed inset-0 flex items-center justify-center bg-neutral-900 bg-opacity-40 z-50">
       <div className="mx-2 w-11/12 md:w-2/3 lg:w-1/3 p-8 rounded-3xl bg-black bg-opacity-60 backdrop-blur-xl shadow-lg">
         <div className="flex justify-between items-center border-b pb-2">
-          <div className="text-3xl font-bold">MY BASKET</div>
+          <div className="text-2xl font-bold">MY BASKET</div>
           <div className="cursor-pointer" onClick={closeModal}>
             <svg
               xmlns="http://www.w3.org/2000/svg"

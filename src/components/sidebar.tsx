@@ -26,7 +26,7 @@ const Sidebar: React.FC<{ isOpen: boolean; closeSidebar: () => void }> = ({ isOp
           <div key={index} className="mb-2" onClick={handleMenuItemClick}>
             <a
               href={item.href}
-              className={`flex items-center py-2 px-4 text-xl no-underline
+              className={`flex items-center py-2 px-4 text-lg no-underline
                  ${item.name === 'Marketplace' ? 'text-orange-400' : 'text-white'
                 }`}
             >

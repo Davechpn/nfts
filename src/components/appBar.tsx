@@ -31,7 +31,7 @@ const AppBar: React.FC<{ toggleSidebar: () => void }> = ({ toggleSidebar }) => {
         onClick={toggleSidebar}
       >
         <img
-          src="/src/assets/icons/menu.svg"
+          src="/assets/icons/menu.svg"
           alt="Cart Icon"
           className="h-10 w-10"
         />
