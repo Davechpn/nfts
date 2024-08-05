@@ -79,14 +79,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <div className="flex">
             {isInCart ? (
               <button
-                className="bg-transparent text-gray-500 font-bold cursor-pointer"
+                className="bg-transparent text-gray-500 font-bold cursor-pointer border-none"
                 onClick={handleRemove}
               >
                 Added to Cart
               </button>
             ) : (
               <button
-                className={`bg-transparent text-green-500 font-bold ${
+                className={`bg-transparent text-green-500 font-bold  border-none ${
                   !canAddToCart
                     ? "opacity-50 cursor-not-allowed"
                     : "cursor-pointer"

@@ -61,7 +61,7 @@ const Cart: React.FC<CartProps> = ({ closeModal }) => {
         <div className="mt-2 space-y-4 overflow-y">
           <div className="p-1 px-2 rounded-2xl flex items-center space-x-4 bg-neutral-700 bg-opacity-50">
             <img
-              src="/src/assets/icons/crypto_logo.svg"
+              src="/assets/icons/crypto_logo.svg"
               className="h-20 w-20 object-contain rounded-lg"
             />
             <div className="flex-grow">
@@ -110,7 +110,7 @@ const Cart: React.FC<CartProps> = ({ closeModal }) => {
                     onClick={() => removeItem(item.id)}
                   >
                     <img
-                      src="/src/assets/icons/trash.svg"
+                      src="/assets/icons/trash.svg"
                       alt="Trash Icon"
                       className="h-10 w-10"
                     />
