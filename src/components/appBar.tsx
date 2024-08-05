@@ -27,12 +27,12 @@ const AppBar: React.FC<{ toggleSidebar: () => void }> = ({ toggleSidebar }) => {
   return (
     <div className="bg-neutral-800 bg-opacity-75 text-white h-16 flex items-center px-4 w-full flex-row">
       <button
-        className="sm:hidden p-2 text-xl text-white bg-transparent"
+        className="sm:hidden p-2 text-xl text-white bg-transparent border-none"
         onClick={toggleSidebar}
       >
         <img
           src="/assets/icons/menu.svg"
-          alt="Cart Icon"
+          alt="Menu Icon"
           className="h-10 w-10"
         />
       </button>
