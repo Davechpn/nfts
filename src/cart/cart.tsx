@@ -37,7 +37,7 @@ const Cart: React.FC<CartProps> = ({ closeModal }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-neutral-900 bg-opacity-40 z-50">
-      <div className="mx-2 w-11/12 md:w-2/3 lg:w-1/3 p-8 rounded-3xl bg-black bg-opacity-60 backdrop-blur-xl shadow-lg">
+      <div className="mx-2 w-10/12 md:w-2/3 lg:w-1/3 p-8 rounded-3xl bg-black bg-opacity-60 backdrop-blur-xl shadow-lg">
         <div className="flex justify-between items-center border-b pb-2">
           <div className="text-2xl font-bold">MY BASKET</div>
           <div className="cursor-pointer" onClick={closeModal}>
@@ -65,7 +65,7 @@ const Cart: React.FC<CartProps> = ({ closeModal }) => {
               className="h-20 w-20 object-contain rounded-lg"
             />
             <div className="flex-grow">
-              <div className="text-xl font-bold mb-1">BTC</div>
+              <div className="text-sm sm:text-xl font-bold mb-1">BTC</div>
               <div className="text-lg">Available</div>
             </div>
             <div className="cursor-pointer text-lg">0.000843245</div>
@@ -99,7 +99,7 @@ const Cart: React.FC<CartProps> = ({ closeModal }) => {
                     </div>
                   </div>
                   <div className="flex-grow">
-                    <div className="text-xl font-bold mb-1">{item.name}</div>
+                    <div className="text-sm sm:text-xl font-bold mb-1">{item.name}</div>
                     <div>
                       {item.btcPrice}{" "}
                       <span className="text-orange-500">BTC</span>
@@ -162,13 +162,13 @@ const Cart: React.FC<CartProps> = ({ closeModal }) => {
 
         <div className="flex justify-between mt-4 space-x-2">
           <button
-            className="bg-transparent border-4 border-amber-200 text-white py-4 px-6 w-1/2 uppercase text-xl cursor-pointer"
+            className="text-xs bg-transparent border-4 border-amber-200 text-white py-4 px-6 w-1/2 uppercase sm:text-xl cursor-pointer"
             onClick={closeModal}
           >
             ADD ANOTHER
           </button>
           <button
-            className="bg-transparent border-4 border-orange-500 text-white py-4 px-6 w-1/2 uppercase text-xl"
+            className="text-xs bg-transparent border-4 border-orange-500 text-white py-4 px-6 w-1/2 uppercase sm:text-xl"
             onClick={() => alert("Proceed to Checkout")}
           >
             CHECKOUT
