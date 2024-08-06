@@ -25,7 +25,7 @@ const AppBar: React.FC<{ toggleSidebar: () => void }> = ({ toggleSidebar }) => {
   };
 
   return (
-    <div className="bg-neutral-800 bg-opacity-75 text-white h-16 flex items-center px-4 w-full flex-row">
+    <div className=" bg-neutral-800 bg-opacity-75 text-white h-16 flex items-center px-4 w-full  flex-row" style={{maxWidth:"Calc(100vw - 12px)"}}>
       <button
         className="sm:hidden p-2 text-xl text-white bg-transparent border-none"
         onClick={toggleSidebar}
@@ -33,10 +33,10 @@ const AppBar: React.FC<{ toggleSidebar: () => void }> = ({ toggleSidebar }) => {
         <img
           src="/assets/icons/menu.svg"
           alt="Menu Icon"
-          className="h-10 w-10"
+          className="h-4 w-4"
         />
       </button>
-      <h1 className=" text-xl font-bold">Marketplace</h1>
+      <div className="text-lg sm:text-xl font-bold grow">Marketplace</div>
       <div className="hidden sm:block flex-1 ml-[-8px]"></div>
       <header className="flex justify-between items-center sm:p-4 relative">
         <div className="flex items-center space-x-4">
@@ -51,7 +51,7 @@ const AppBar: React.FC<{ toggleSidebar: () => void }> = ({ toggleSidebar }) => {
           </button>
 
         { walletConnected && <div
-            className="flex rounded-full p-1 text-sm items-center"
+            className="flex rounded-full p-1 text-xs sm:text-sm items-center"
             style={{ border: "1px solid grey" }}
           >
             <div className="flex mr-1">
