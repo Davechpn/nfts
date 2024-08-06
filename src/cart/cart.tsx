@@ -100,7 +100,7 @@ const Cart: React.FC<CartProps> = ({ closeModal }) => {
                   </div>
                   <div className="flex-grow">
                     <div className="text-sm sm:text-xl font-bold mb-1">{item.name}</div>
-                    <div>
+                    <div className="text-xs sm:text-md">
                       {item.btcPrice}{" "}
                       <span className="text-orange-500">BTC</span>
                     </div>
